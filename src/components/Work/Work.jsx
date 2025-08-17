@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { projects } from "../../constants";
+import { projects } from "../../constants.js";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -49,13 +49,16 @@ const Work = () => {
               <p className="text-gray-500 mb-4 pt-4 line-clamp-3">
                 {project.description}
               </p>
-              <div className="mb-4">
+
+              {/* ✅ Updated tags with logo + name */}
+              <div className="mb-4 flex flex-wrap gap-2">
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1 mr-2 mb-2"
+                    className="flex items-center gap-2 bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-3 py-1"
                   >
-                    {tag}
+                    <img src={tag.logo} alt={tag.name} className="w-4 h-4" />
+                    {tag.name}
                   </span>
                 ))}
               </div>
@@ -92,16 +95,20 @@ const Work = () => {
                 <p className="text-gray-400 mb-6 lg:text-base text-xs">
                   {selectedProject.description}
                 </p>
+
+                {/* ✅ Updated modal tags with logos */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {selectedProject.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1"
+                      className="flex items-center gap-2 bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-3 py-1"
                     >
-                      {tag}
+                      <img src={tag.logo} alt={tag.name} className="w-4 h-4" />
+                      {tag.name}
                     </span>
                   ))}
                 </div>
+
                 <div className="flex justify-center">
                   <a
                     href={selectedProject.github}

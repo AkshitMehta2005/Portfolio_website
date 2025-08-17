@@ -33,7 +33,7 @@ export const SkillsInfo = [
     title: 'Backend',
     skills: [
       { name: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-      { name: 'Express.js', logo: 'https://1.bp.blogspot.com/-jkSmywQ57sA/Wer3KKSqgaI/AAAAAAAACc4/07TexMsBBI4v7WlVKo76YvxM3TvrMxIdwCLcBGAs/s640/express.js.png' },
+      { name: 'Express.js', logo: 'https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png' },
       { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
       { name: 'PostgreSQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
       { name: 'RESTful APIs', logo: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-api-web-development-flaticons-lineal-color-flat-icons.png' },
@@ -54,8 +54,96 @@ export const SkillsInfo = [
 ];
 
 // ======================
-// EXPERIENCE
+// PROJECTS
 // ======================
+export const projects = [
+  {
+    id: 0,
+    title: "CodeCast",
+    description:
+      "Engineered a real-time code editor supporting up to 10 concurrent users, reducing group coding setup time by 75%. Implemented CodeMirror syncing for collaborative editing and delivered a responsive UI that decreased bounce rate by 40%.",
+    image: CodeCast,
+    tags: [
+      { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "Express.js", logo: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" },
+      { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "Socket.IO", logo: "https://socket.io/images/logo.svg" },
+      { name: "CodeMirror", logo: "https://codemirror.net/doc/logo.png" },
+    ],
+    github: "https://github.com/AkshitMehta2005/CodeCast",
+    webapp: "https://github.com/AkshitMehta2005/CodeCast",
+  },
+  {
+    id: 1,
+    title: "PlateForAll",
+    description:
+      "Developed a food donation platform that connects donors with people in need, helping to reduce hunger. Integrated user and delivery modules to streamline food distribution, and used Leaflet.js for real-time routing and delivery tracking. Built with MERN stack for scalability and seamless user experience.",
+    image: PlateForAll,
+    tags: [
+      { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "Express.js", logo: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" },
+      { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "Leaflet.js", logo: "https://w7.pngwing.com/pngs/347/210/png-transparent-leaflet-javascript-library-web-browser-plug-in-software-framework-others-leaf-rss-map.png" },
+    ],
+    github: "https://github.com/AkshitMehta2005/PlateForAll",
+    webapp: "https://plateforall-demo.vercel.app",
+  },
+  {
+    id: 2,
+    title: "PostgreStore",
+    description:
+      "Built a scalable product management platform supporting 100+ products, reducing server response time by 25%. Integrated Arcjet security with rate limiting, applied Zustand for state management, and implemented Redis caching for fast data retrieval.",
+    image: postgrestoreLogo,
+    tags: [
+      { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+      { name: "Express.js", logo: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" },
+      { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "Zustand", logo: "https://docs.pmnd.rs/zustand.ico" },
+      { name: "Redis", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+      { name: "Arcjet", logo: "https://thetechcrime.com/wp-content/uploads/2025/01/Leonardo_Phoenix_09_Design_a_sleek_and_modern_thumbnail_for_a_2-768x434.jpg" },
+    ],
+    github: "https://github.com/AkshitMehta2005/PostgreStore",
+    webapp: "https://postgrestore-aw2v.onrender.com/",
+  },
+  {
+    id: 3,
+    title: "Job Seeking Website",
+    description:
+      "Developed a job portal with dynamic dashboards used by 50+ test users, reducing hiring turnaround time by 40%. Implemented JWT-based authentication, Cloudinary integration, and advanced filtering with application tracking.",
+    image: JobWebsiteLogo,
+    tags: [
+      { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "Express.js", logo: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" },
+      { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "JWT", logo: "https://jwt.io/img/pic_logo.svg" },
+      { name: "Cloudinary", logo: "https://tse2.mm.bing.net/th/id/OIP.v33i4NeDbAAMSm_JFteP7gHaGl?w=860&h=765&rs=1&pid=ImgDetMain&o=7&rm=3" },
+    ],
+    github: "https://github.com/AkshitMehta2005/job-seeking-website",
+    webapp: "https://github.com/AkshitMehta2005/job-seeking-website",
+  },
+  {
+    id: 4,
+    title: "Q/A Website (StackFlow Clone with Admin Dashboard)",
+    description:
+      "Built a full-stack Q/A platform inspired by StackOverflow, featuring user authentication with JWT, question & answer posting, upvoting, and admin dashboard for moderation. Integrated Cloudinary for media uploads and implemented advanced search and filtering for better user experience.",
+    image: KnowBee,
+    tags: [
+      { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "Express.js", logo: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" },
+      { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "JWT", logo: "https://jwt.io/img/pic_logo.svg" },
+      { name: "Cloudinary", logo: "https://tse2.mm.bing.net/th/id/OIP.v33i4NeDbAAMSm_JFteP7gHaGl?w=860&h=765&rs=1&pid=ImgDetMain&o=7&rm=3" },
+    ],
+    github: "https://github.com/AkshitMehta2005/knowBee",
+    webapp: "https://github.com/AkshitMehta2005/job-seeking-website",
+  },
+]
+
 export const experiences = [
   
   {
@@ -87,102 +175,4 @@ export const experiences = [
       "Tailwind CSS",
     ],
   },
-];
-
-// ======================
-// EDUCATION
-// ======================
-
-
-// ======================
-// EDUCATION
-// ======================
-export const education = [
-  {
-    id: 0,
-    img: 'https://www.facultyplus.com/wp-content/uploads/2021/03/Iiit-una-logo.png', // IIIT Una logo from official site
-    school: "Indian Institute of Information Technology, Una",
-    date: "Nov 2022 – May 2026",
-    grade: "7.16",
-    desc: "BTech in Information Technology. Relevant coursework: Object-Oriented Programming, Discrete Mathematics, Data Structures and Algorithms, Operating Systems, Computer Networks, Advanced Data Structures and Algorithms, Advanced Databases.",
-    degree: "Bachelor of Technology - Information Technology",
-  },
-  {
-    id: 1,
-    img: 'https://4.bp.blogspot.com/-cKfxHZBZKNo/WIQaN1S0CwI/AAAAAAAAFAc/8CVg_TVmG6ES8uVepCpzzYmwKyxvmyR7gCLcB/s1600/kvs-logo-with-bg.png', // replace with KVFRI logo link if available
-    school: "Kendriya Vidyalaya FRI, Dehradun",
-    date: "2021 – 2022",
-    grade: "80%",
-    desc: "Completed Class 12th with Physics, Chemistry, and Mathematics (PCM) under CBSE curriculum.",
-    degree: "Class 12th (Science - PCM)",
-  },
-  {
-    id: 2,
-    img: 'https://4.bp.blogspot.com/-cKfxHZBZKNo/WIQaN1S0CwI/AAAAAAAAFAc/8CVg_TVmG6ES8uVepCpzzYmwKyxvmyR7gCLcB/s1600/kvs-logo-with-bg.png', // replace with KVFRI logo link if available
-    school: "Kendriya Vidyalaya FRI, Dehradun",
-    date: "2019 – 2020",
-    grade: "83%",
-    desc: "Completed Class 10th under CBSE curriculum with core subjects including Science, Mathematics, Social Science, English, and Hindi.",
-    degree: "Class 10th",
-  },
-];
-
-
-// ======================
-// PROJECTS
-// ======================
-export const projects = [
-  {
-    id: 0,
-    title: "CodeCast",
-    description:
-      "Engineered a real-time code editor supporting up to 10 concurrent users, reducing group coding setup time by 75%. Implemented CodeMirror syncing for collaborative editing and delivered a responsive UI that decreased bounce rate by 40%.",
-    image: CodeCast, // Replace with actual project image
-    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.IO", "CodeMirror"],
-    github: "https://github.com/AkshitMehta2005/CodeCast",
-    webapp: "https://github.com/AkshitMehta2005/CodeCast",
-  },
- {
-  id: 1,
-  title: "PlateForAll",
-  description:
-    "Developed a food donation platform that connects donors with people in need, helping to reduce hunger. Integrated user and delivery modules to streamline food distribution, and used Leaflet.js for real-time routing and delivery tracking. Built with MERN stack for scalability and seamless user experience.",
-  image: PlateForAll, // Replace with actual project image
-  tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Leaflet.js"],
-  github: "https://github.com/AkshitMehta2005/PlateForAll",
-  webapp: "https://plateforall-demo.vercel.app", // replace with actual deployed link if available
-},
-
-
-  {
-    id: 2,
-    title: "PostgreStore",
-    description:
-      "Built a scalable product management platform supporting 100+ products, reducing server response time by 25%. Integrated Arcjet security with rate limiting, applied Zustand for state management, and implemented Redis caching for fast data retrieval.",
-    image: postgrestoreLogo, // Replace with actual project image
-    tags: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Zustand", "Redis", "Arcjet"],
-    github: "https://github.com/AkshitMehta2005/PostgreStore",
-    webapp: "https://postgrestore-aw2v.onrender.com/",
-  },
-  {
-    id: 3,
-    title: "Job Seeking Website",
-    description:
-      "Developed a job portal with dynamic dashboards used by 50+ test users, reducing hiring turnaround time by 40%. Implemented JWT-based authentication, Cloudinary integration, and advanced filtering with application tracking.",
-    image: JobWebsiteLogo, // Replace with actual project image
-    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Cloudinary"],
-    github: "https://github.com/AkshitMehta2005/job-seeking-website",
-    webapp: "https://github.com/AkshitMehta2005/job-seeking-website",
-  },
-{
-  id: 4,
-  title: "Q/A Website (StackFlow Clone with Admin Dashboard)",
-  description:
-    "Built a full-stack Q/A platform inspired by StackOverflow, featuring user authentication with JWT, question & answer posting, upvoting, and admin dashboard for moderation. Integrated Cloudinary for media uploads and implemented advanced search and filtering for better user experience.",
-  image: KnowBee, // Replace with actual project image
-  tags: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
-  github: "https://github.com/AkshitMehta2005/knowBee",
-  webapp: "https://github.com/AkshitMehta2005/job-seeking-website",
-},
-
 ];

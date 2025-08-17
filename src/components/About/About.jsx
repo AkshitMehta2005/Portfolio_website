@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
-import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/profile2.jpg'; // replace with your own image if available
 
 const About = () => {
@@ -41,16 +40,17 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a passionate Full-Stack Developer with expertise in the MERN stack and a strong foundation in data structures and algorithms. 
-            I enjoy building scalable applications, optimizing backend performance, and delivering clean, responsive UIs. 
-            With hands-on experience from internships at Transcybernetics and Tata Motors, I specialize in crafting secure, efficient, and user-friendly digital solutions.
+            I am a Full-Stack Developer skilled in the MERN stack with strong problem-solving skills. 
+            I have internship experience at Transcybernetics and Tata Motors, focusing on scalable and secure solutions. 
+            Currently, I am pursuing a B.Tech (2022–2026) in Information Technology from IIIT Una, with key interests in Data Structures, DBMS, Operating Systems, and Web Development.
           </p>
+
           {/* Resume Button */}
           <a
             href="https://drive.google.com/file/d/1nBVeugorhrQ1lGS-Kyg96iVUJ6bZQi2N/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
+            className="inline-block text-white py-3 px-8 rounded-full mt-8 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
               background: 'linear-gradient(90deg, #8245ec, #a855f7)',
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
@@ -59,23 +59,16 @@ const About = () => {
             DOWNLOAD CV
           </a>
         </div>
+
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
-          <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
-            perspective={1000}
-            scale={1.05}
-            transitionSpeed={1000}
-            gyroscope={true}
-          >
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
             <img
               src={profileImage}
               alt="Akshit Mehta"
               className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
             />
-          </Tilt>
+          </div>
         </div>
       </div>
     </section>

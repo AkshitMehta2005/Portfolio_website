@@ -1,5 +1,5 @@
 import React from "react";
-import { education } from "../../constants"; // Import the education data
+import { education } from "../../constants.js"; // Import the education data
 
 const Education = () => {
   return (
