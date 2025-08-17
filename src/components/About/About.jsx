@@ -12,16 +12,18 @@ const About = () => {
         {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           {/* Greeting */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 leading-tight">
             Hi, I am
           </h1>
+
           {/* Name */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
             Akshit Mehta
           </h2>
+
           {/* Skills Heading with Typing Effect */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight text-[#8245ec]">
+            <span className="text-gray-900 dark:text-white">I am a </span>
             <ReactTypingEffect
               text={[
                 'Full-Stack Developer',
@@ -38,8 +40,9 @@ const About = () => {
               )}
             />
           </h3>
+
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-lg text-gray-700 dark:text-gray-300 mb-10 mt-8 leading-relaxed">
             I am a Full-Stack Developer skilled in the MERN stack with strong problem-solving skills. 
             I have internship experience at Transcybernetics and Tata Motors, focusing on scalable and secure solutions. 
             Currently, I am pursuing a B.Tech (2022–2026) in Information Technology from IIIT Una, with key interests in Data Structures, DBMS, Operating Systems, and Web Development.
@@ -62,11 +65,14 @@ const About = () => {
 
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
-          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] 
+                          border-4 border-purple-700 rounded-full overflow-hidden 
+                          transition-transform duration-500 ease-in-out hover:scale-105">
             <img
               src={profileImage}
               alt="Akshit Mehta"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+              className="w-full h-full rounded-full object-cover 
+                         drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
             />
           </div>
         </div>

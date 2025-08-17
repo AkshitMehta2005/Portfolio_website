@@ -14,24 +14,24 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
+    <footer className="bg-gray-100 dark:bg-[#050414] text-gray-800 dark:text-gray-300 py-8 px-[12vw] md:px-[7vw] lg:px-[20vw] transition-colors duration-300">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Akshit Mehta</h2>
+        <h2 className="text-xl font-semibold text-purple-600 dark:text-purple-400">
+          Akshit Mehta
+        </h2>
 
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
           {[
             { name: "About", id: "about" },
-            { name: "Skills", id: "skills" },
             { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" }, // must match section id
-            // { name: "Education", id: "education" },
+            { name: "Projects", id: "projects" },
           ].map((item, index) => (
             <button
               key={index}
               onClick={() => handleScroll(item.id)}
-              className="hover:text-purple-500 text-sm sm:text-base my-1"
+              className="hover:text-purple-600 dark:hover:text-purple-400 text-sm sm:text-base my-1"
             >
               {item.name}
             </button>
@@ -59,7 +59,7 @@ const Footer = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
+              className="text-xl hover:text-purple-600 dark:hover:text-purple-400 transition-transform transform hover:scale-110"
             >
               {item.icon}
             </a>
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <p className="text-sm text-gray-400 mt-6">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-6">
           © {new Date().getFullYear()} Akshit Mehta. All rights reserved.
         </p>
       </div>
